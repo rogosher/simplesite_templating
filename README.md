@@ -7,7 +7,7 @@ Either run the shell script,
 $ chmod +x gen_simplesite.sh
 $ ./gen_simplesite.sh
 ```
-or run the rails command with the template.
+or run the `rails new` command with the `-m` switch picking up the application template.
 ```bash
 $ rails new -m simplesite_template.rb -O
 ```
