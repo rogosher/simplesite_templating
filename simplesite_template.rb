@@ -24,9 +24,9 @@ gsub_file "app/assets/stylesheets/application.scss", / \*= require_tree .\n/, ''
 gsub_file "app/assets/stylesheets/application.scss", / \*= require_self\n/, ''
 # Add boostrap dependencies
 inject_into_file "app/assets/stylesheets/application.scss", 
-  "\n@import \"bootstrap-sprockets\";" \ # sprockets before bootstrap
+  "\n@import \"bootstrap-sprockets\";" \
   "\n@import \"bootstrap\";" \
-  "\n@import \"partials/header\";\n",    # Simplesite header stylesheet
+  "\n@import \"partials/header\";\n",
   :before => /\z/
 # Javascript portion of bootstrap.
 inject_into_file "app/assets/javascripts/application.js", "//= require bootstrap-sprockets\n", :before => /\z/
