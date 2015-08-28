@@ -1,0 +1,29 @@
+$header_font: CaviarDreams;
+
+// Try and capture all font possibilities 
+@font-face {
+  font-family: $header_font;
+  src: font-url('#{$header_font}.eot');
+  src: font-url('#{$header_font}.eot?#iefix') format('embedded-opentype'),
+    font-url("#{$header_font}.woff2") format('woff2'),
+    font-url('#{$header_font}.woff') format('woff'),
+    font-url('#{$header_font}.ttf') format('truetype'),
+    font-url('#{$header_font}.svg#svg#{$header_font}') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+// Setup the theme for a simple site
+.header {
+  font-family: $header_font, Fallback, sans-serif;
+  font-size: 6em;
+  padding-bottom: 20%;
+}
+
+.vertical-center {
+  min-height: 100%;
+  min-height: 100vh;
+
+  display: flex;
+  align-items: center;
+}
